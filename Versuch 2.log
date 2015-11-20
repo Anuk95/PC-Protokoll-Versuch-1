@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.8)  20 NOV 2015 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.8)  20 NOV 2015 16:52
 entering extended mode
 **"Versuch 2.tex"
 ("Versuch 2.tex"
@@ -968,7 +968,7 @@ Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 Package babelbib Warning: Command \selectbiblanguage used without package
 (babelbib)                option fixlanguage. Ignored on input line 80.
 
-No file "Versuch 2".aux.
+("Versuch 2.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
@@ -985,6 +985,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 \AtBeginShipoutBox=\box56
 Package hyperref Info: Link coloring OFF on input line 82.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -996,6 +997,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 82.
 LaTeX Info: Redefining \pageref on input line 82.
 LaTeX Info: Redefining \nameref on input line 82.
+
+("Versuch 2.out") ("Versuch 2.out")
 \@outlinefile=\write4
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -1167,6 +1170,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 
 {C:/Users/Alea/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("Versuch 2.toc")
 \tf@toc=\write5
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 124.
@@ -1179,26 +1183,18 @@ Package babel Info: Redefining ngerman shorthand "~
  [2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
-
-("Versuch 2.aux")
+ ("Versuch 2.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
-
-
-Package rerunfilecheck Warning: File `"Versuch 2".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Versuch 2".out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `"Versuch 2".out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 19284 strings out of 493673
- 358095 string characters out of 3141533
- 451145 words of memory out of 3000000
- 22417 multiletter control sequences out of 15000+200000
+ 19294 strings out of 493673
+ 358244 string characters out of 3141533
+ 451264 words of memory out of 3000000
+ 22419 multiletter control sequences out of 15000+200000
  16410 words of font info for 69 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  44i,7n,56p,10362b,762s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1208,7 +1204,7 @@ Here is how much of TeX's memory you used:
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Versuch 2.pdf" (2 pages, 63548 bytes).
+Output written on "Versuch 2.pdf" (2 pages, 63704 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
