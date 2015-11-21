@@ -1,9 +1,11 @@
 \select@language {ngerman}
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Theoretische Grundlagen}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Elementarzelle}{3}{subsection.1.1}
-\contentsline {section}{\numberline {2}Experimentelles}{5}{section.2}
-\contentsline {section}{\numberline {3}Messwerte}{5}{section.3}
-\contentsline {section}{\numberline {4}Auswertung}{5}{section.4}
-\contentsline {section}{\numberline {5}Fehlerrechnung}{5}{section.5}
-\contentsline {section}{\numberline {6}Literaturverzeichnis}{5}{section.6}
+\contentsline {subsection}{\numberline {1.1}Stoffmenge}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Elementarzelle}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Bestimmung der Loschmidt-Zahl}{5}{subsection.1.3}
+\contentsline {section}{\numberline {2}Experimentelles}{6}{section.2}
+\contentsline {section}{\numberline {3}Messwerte}{6}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{6}{section.4}
+\contentsline {section}{\numberline {5}Fehlerrechnung}{6}{section.5}
+\contentsline {section}{\numberline {6}Literaturverzeichnis}{6}{section.6}

@@ -124,6 +124,15 @@ Assistentin: & Annemarie Kehl\\
 \newpage
 
 \section{Theoretische Grundlagen}
+\subsection{Stoffmenge}
+Im Umgang mit chemischen Reaktionen müssen Stoffmengen betrachtet werden. Da jedoch die Teilchen, mit denen sich auseinandergesetzt wird so klein sind, ist es höchst unpraktisch mit den jeweiligen Teilchen Zahlen zu rechnen. Daher wurde die Einheit Mol eingeführt, in welcher die Stoffmenge angegeben wird. Diese Einheit ist so definiert, dass $ \mathrm{1 mol}$ einer beliebigen Substanz dieselbe Anzahl von Teilchen (Moleküle, Atome, Ionen) enthält, wie die in $\mathrm{12g}$ des Kohlenstoff-Isotops $\mathrm{^{12}C}$ enthalten sind. Diese Zahl an Teilchen, die in einem Mol enthalten sind, wird durch die Loschmidt-Zahl $N_{A}$ (oder auch Avogadro-Konstante oder Avogadro-Zahl) angegeben:\\
+
+\begin{center}
+$N_{A}=6,02214129(27)\cdot 10^{23}\mathrm{mol^{-1}}$ 
+\end{center}
+
+Mit dieser Zahl lässt sich nun die Molmasse \textit{M} einer Substanz angeben, welche die Masse eines Mols einer Sunstanz in der Einheit $ \mathrm{g \cdot mol^{-1}}$ ist. Analog bezeichnet das Molvolumen $V_{m}$ das Volumen, welches von einem Mol eines Stoffes eingenommen wird. Dieses Volumen ist temperatur- und druckabhängig.
+
 \subsection{Elementarzelle}
 In einem Kristall sind Teilchen (Atome, Ionen, Moleküle) in symmetrischer und geordneter Weise in einem sich periodisch wiederholenden, dreidimensionalen Muster angeordnet. Diese Symmetrie eines Kristalls kann mithilfe eines Kristallgitters beschrieben werden. Indem die Mittelpunkte der Teilchen gedanklich durch Gitterpunkte ersetzt werden, lässt sich aus einer Kristallstruktur ein Kristallgitter ableiten.\\
 Ein Kristallgitter kann in lauter identische Elementarzellen zerlegt werden. Das Gitter ist also aus wiederholt in alle Raumrichtungen aneinandergereihte Elementarzellen aufgebaut. Dies lässt sich wieder auf die Kristallstruktur übertragen: Da der Kristall durch wiederholtes aneinanderlegen der Elementarzellen aufgebaut ist, muss die chemische Zusammensetzung einer Elementarzelle exakt der Zusammensetzung der Substanz entsprechen\footnote{Vgl. Mortimer s. 180}.\\\\
@@ -132,26 +141,72 @@ Je nach ihrer Symmetrie können Kristallgitter in Gittertypen eingeteilt werden,
 
 \begin{figure} [h]
 \begin{center}
-\includegraphics[scale=0.75]{Aluminium.png} \end{center}
+\includegraphics[scale=0.7]{Aluminium.png} \end{center}
 \caption{Kristallstruktur von Aluminium}
 \end{figure}
 
 \begin{figure} [h]
 \begin{center}
-\includegraphics[scale=0.75]{Lithiumflourid.png} \end{center}
+\includegraphics[scale=0.7]{Lithiumflourid.png} \end{center}
 \caption{Kristallstruktur von Lithiumflourid}
 \end{figure}
 
 \begin{figure} [h]
 \begin{center}
-\includegraphics[scale=0.75]{Calciumflourid.png} \end{center}
+\includegraphics[scale=0.7]{Calciumflourid.png} \end{center}
 \caption{Kristallstruktur von Calciumflourid}
 \end{figure}
 
 \vspace{10cm}
 In den Bespielen liegt bei den ersten beiden Kristallen ein kubisch-flächenzentriertes Gitter und bei dem letzen Kristall ein kubisch-flächenzentriertes Gitter aus $\mathrm {Ca^{2+}-Ionen}$ und ein kubisch-primitives Gitter aus $ \mathrm {F^{-}-Ionen vor}$. Des weiteren gibt es etwa tetragonale, hexagonale, rhomboedrische sowie viele weitere Strukturen.\\ Eine primitive Elementarzelle enthält von jeder Atomart nur ein äquivalentes Atom. Die acht Atome in den Eckpunkten der Elementarzellen gehören nur zu einem achtel zu der Elementarzelle, da an jeder Ecke acht Elementarzellen aufeinander treffen.\\
 In einer flächenzentrierten Elementarzelle befinden sich in den Ecken und in den Mitten aller sechs Flächen äquivalente Atome. Ein Atom auf einer Fläche gehört der Zelle zur Hälfte, eines auf der Kante zu einem viertel und eines im Zentrum der Zelle ganz.\\
-Mithilfe dieser Informationen lässt sich berechnen, wie viele Formeleinheiten auf eine Elementarzelle kommen. Beispielsweise kommt auf eine primitive Elementarzelle eine Formeleinheit, da wir acht Teilchen haben, die der Elementarzelle zu je einem achtel gehören.  
+Mithilfe dieser Informationen lässt sich berechnen, wie viele Formeleinheiten $N_{Z}$ auf eine Elementarzelle kommen. Beispielsweise kommt auf eine primitive Elementarzelle eine Formeleinheit, da wir acht Teilchen haben, die der Elementarzelle zu je einem achtel gehören.\\\\ Mithilfe folgender Überlegungen lässt sich die Masse $m_{Z}$ einer Elementarzelle bestimmen:
+
+\begin{equation}
+m_{Z}=Nz \cdot \dfrac{M}{N_{A}}
+\end{equation} 
+
+Das Volumen der Elementarzellen unserer zu untersuchender Kristalle lässt sich wie das Volumen eines Würfels folgendermaßen berechnen.
+
+\begin{equation}
+V_Z = a^3
+\end{equation}
+
+
+\subsection{Bestimmung der Loschmidt-Zahl}
+ 
+Ziel des Versuchs ist es, die Loschmidt-Zahl $N_{A}$ durch den Vergleich von makroskopischer Dichte $p_{makro}$ mit mikroskopischer Dichte $p_{mikro}$ von exact geformten, zylindrischen Lithiumflourid-, Calciumflourid- und Aluminiumkristallen, zu bestimmen.\\\\
+
+Die Makroskopische Dichte lässt sich durch  Masse und Volumen der Probekörper wie folgt errechnen:
+
+\begin{equation}
+p_{makro}= \frac{m_{Zyl}}{V_{Zyl}}
+\end{equation}
+
+Das Volumen des zylindrischen Probekörpers kann dabei durch genaue Bestimmung von Radius $r$ und Länge $l$ mithilfe folgender Formel bestimmt werden:
+
+\begin{equation}
+V_{zyl} = \pi \cdot r^{2} \cdot l
+\end{equation}
+
+Für die mikrospische Dichte $p_{mikro}$ einer Elementarzelle gilt, dass sie identisch zu der Makroskopischen Dichte ist, da ein Kristall durch die periodische Wiederholung seiner Elementarzellen aufgebaut ist.
+
+\begin{equation}
+p_{mikro}=\frac{m_Z}{V_Z}
+\end{equation}
+
+Masse und Volumen der Elementarzelle lassen sich mithilfe der oben aufgeführten Gleichungen 1 und 2 berechnen. Somit gilt unter Annahme, dass die makroskopische Dichte identisch zur mikroskopischen ist:
+
+\begin{equation}
+\frac{m_{Zyl}}{V_{Zyl}}= \frac{Nz \cdot M}{N_{A} \cdot a^3}
+\end{equation}
+
+Dies lässt sich nun nach $N_A$ umformen und wir erhalten folgende Frmel zur Berechnung der Loschmidt-Zahl:
+
+\begin{equation}
+N_A= \frac{N_Z \cdot M \cdot V_{Zyl}}{a^3 \cdot m_{Zyl}}
+\end{equation}
+ 
 
 
 \section{Experimentelles}
