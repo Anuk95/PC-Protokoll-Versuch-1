@@ -142,20 +142,23 @@ Je nach ihrer Symmetrie können Kristallgitter in Gittertypen eingeteilt werden,
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.7]{Aluminium.png} \end{center}
-\caption{Kristallstruktur von Aluminium}
+\caption{Kristallstruktur von Aluminium$^a$}
 \end{figure}
 
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.7]{Lithiumflourid.png} \end{center}
-\caption{Kristallstruktur von Lithiumflourid}
+\caption{Kristallstruktur von Lithiumflourid$^b$}
 \end{figure}
 
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.7]{Calciumflourid.png} \end{center}
-\caption{Kristallstruktur von Calciumflourid}
+\caption{Kristallstruktur von Kalziumflourid$^c$}
 \end{figure}
+
+\hrulefill\\
+$^{a,b,c}$ Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Institut für physikalische Chemie, Uni Göttingen, 2015, Seite 2
 
 \vspace{10cm}
 In den Bespielen liegt bei den ersten beiden Kristallen ein kubisch-flächenzentriertes Gitter und bei dem letzen Kristall ein kubisch-flächenzentriertes Gitter aus $\mathrm {Ca^{2+}-Ionen}$ und ein kubisch-primitives Gitter aus $ \mathrm {F^{-}-Ionen vor}$. Des weiteren gibt es etwa tetragonale, hexagonale, rhomboedrische sowie viele weitere Strukturen.\\ Eine primitive Elementarzelle enthält von jeder Atomart nur ein äquivalentes Atom. Die acht Atome in den Eckpunkten der Elementarzellen gehören nur zu einem achtel zu der Elementarzelle, da an jeder Ecke acht Elementarzellen aufeinander treffen.\\
@@ -209,10 +212,36 @@ N_A= \frac{N_Z \cdot M \cdot V_{Zyl}}{a^3 \cdot m_{Zyl}}
 
 \subsection{Bestimmung von $a$ des Kalciumflouridkristalls}
  
-Für die Berechnung der Loschmidtzahl ist  
+Um die Loschmidt-Zahl zu bestimmen wird der Wert $a$, die Kantenlänge einer Elementarzelle, benötigt. Dieser ist für die meisten Kristalle schon gegeben, lediglich für den Kalziumchlorid-Kristall muss sie noch ermittelt werden. Abbildung 3 zeigt die Kristallstruktur von Kalziumflourid. Es ist ein größeres kubisch-flächenzentriertes Gitter von $ \mathrm {Ca^{2+}}$-Ionen sowie ein darin liegendes, kleineres kubisch-primitives Gitter von $ \mathrm{F^-}$-Ionen erkennbar. Als Information ist uns der Abstand $r$ von den Ionen gegeben. Bei genauerer Betrachtung des Kristalls ist zu erkennen, dass ein Fluorid-Ion tetraedrisch von je vier Kalzium-Ionen umgeben ist. Der Abstand vom Zentrum zu den Ecken des Tetraeders entspricht dabei dem Abstand $r$.
 
+\begin{figure} [h]
+\begin{center}
+\includegraphics[scale=1]{a.png} \end{center}
+\caption{Berechnung von $a$}
+\end{figure} 
+
+So lässt sich nun die Länge $d$ mithilfe des Kosinussatzes berechnen, da der Winkel in einem Tetraeder allgemein mit $109,5^\circ$ bekannt ist:
+
+\begin{equation}
+ d = \sqrt{2r^2-2r^2 \cdot \cos \beta } = 3, 863 \quad \AA
+\end{equation}     
+
+Die Länge $d$ ist die Hälfte der Flächen-diagonalen des Kalzium-Ionengitters. Da der Winkel zwischen den Flächen-diagonalen allgemein mit $ 90^\circ $ bekannt ist, lässt sich wieder mithilfe des Kosinussatzes die Länge $a$ berechnen:
+
+\begin{equation}
+ d = \sqrt{2d^2-2d^2 \cdot \cos \gamma } = 5,463 \quad \AA
+\end{equation}   
 
 \section{Experimentelles}
+
+\subsection{Versuchsaufbau}
+\subsection{Hilfsmittel}
+Als Hilfsmittel werden eine Analysewaage sowie eine Mikrometerschraube verwendet.
+
+\subsection{Durchführung}
+
+Für die Bestimmung der Loschmidt-Zahl werden die drei Kristalle jeweils zehnmal gewogen und ausgemessen. Mithilfe der Analysewaage wird die Masse $m_{Zyl}$ bestimmt. Mit der Mikrometerschraube wird die Länge $l$ und Durchmesser $d$ gemessen. Im Umgang mit den Kristallen müssen Baumwollhandschuhe getragen werden. 
+
 \section{Auswertung}
 \section{Fehlerrechnung}
 \section{Literaturverzeichnis}
