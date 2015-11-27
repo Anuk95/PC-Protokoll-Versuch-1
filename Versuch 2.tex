@@ -135,27 +135,35 @@ Mit dieser Zahl lässt sich nun die Molmasse \textit{M} einer Substanz angeben, 
 
 \subsection{Elementarzelle}
 In einem Kristall sind Teilchen (Atome, Ionen, Moleküle) in symmetrischer und geordneter Weise in einem sich periodisch wiederholenden, dreidimensionalen Muster angeordnet. Diese Symmetrie eines Kristalls kann mithilfe eines Kristallgitters beschrieben werden. Indem die Mittelpunkte der Teilchen gedanklich durch Gitterpunkte ersetzt werden, lässt sich aus einer Kristallstruktur ein Kristallgitter ableiten.\\
+<<<<<<< HEAD
 Ein Kristallgitter kann in lauter identische Elementarzellen zerlegt werden. Das Gitter ist also aus wiederholt in alle Raumrichtungen aneinandergereihte Elementarzellen aufgebaut. Dies lässt sich wieder auf die Kristallstruktur übertragen: Da der Kristall durch wiederholtes aneinanderlegen der Elementarzellen aufgebaut ist, muss die chemische Zusammensetzung einer Elementarzelle exakt der Zusammensetzung der Substanz entsprechen\footnote{Vgl. Mortimer s. 180}.\\\\
 Je nach ihrer Symmetrie können Kristallgitter in Gittertypen eingeteilt werden, die sich in der Metrik ihrer Elementarzellen unterscheiden\footnote{Vgl. Mortimer}. Mithilfe von Röntgenstrahlung bekannter Wellenlänge kann die Strukur und Größe einer Elementarzelle, also ihre Gitterstruktur und Gitterkonstante \textit{a} bestimmt werden. Hier eine Darstellung dieser Größe an den von uns vermessenen Kristallen:\\\\
+=======
+Ein Kristallgitter kann in lauter identische Elementarzellen zerlegt werden. Das Gitter ist also aus wiederholt in alle Raumrichtungen aneinandergereihte Elementarzellen aufgebaut. Dies lässt sich wieder auf die Kristallstruktur übertragen: Da der Kristall durch wiederholtes aneinanderlegen der Elementarzellen aufgebaut ist, muss die chemische Zusammensetzung einer Elementarzelle exakt der Zusammensetzung der Substanz entsprechen\footnote{Vgl. Mortimer, S. 180}.\\\\
+Je nach ihrer Symmetrie können Kristallgitter in Gittertypen eingeteilt werden, die sich in der Metrik ihrer Elementarzellen unterscheiden\footnote{ebd.}. Mithilfe von Röntgenstrahlung bekannter Wellenlänge kann die Strukur und Größe einer Elementarzelle, also ihre Gitterstruktur und Gitterkonstante \textit{a} bestimmt werden. Hier einige Beispiele solcher Messungen, es sind die von uns zu vermessenden Kristalle:\\\\
+>>>>>>> origin/master
 
 
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.7]{Aluminium.png} \end{center}
-\caption{Kristallstruktur von Aluminium}
+\caption{Kristallstruktur von Aluminium$^a$}
 \end{figure}
 
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.7]{Lithiumflourid.png} \end{center}
-\caption{Kristallstruktur von Lithiumflourid}
+\caption{Kristallstruktur von Lithiumflourid$^b$}
 \end{figure}
 
 \begin{figure} [h]
 \begin{center}
 \includegraphics[scale=0.7]{Calciumflourid.png} \end{center}
-\caption{Kristallstruktur von Calciumflourid}
+\caption{Kristallstruktur von Kalziumflourid$^c$}
 \end{figure}
+
+\hrulefill\\
+$^{a,b,c}$ Skriptum für das Praktikum zur Einführung in die Physikalische Chemie, Seite 2.
 
 \vspace{10cm}
 In den Bespielen liegt bei den ersten beiden Kristallen ein kubisch-flächenzentriertes Gitter und bei dem letzen Kristall ein kubisch-flächenzentriertes Gitter aus $\mathrm {Ca^{2+}-Ionen}$ und ein kubisch-primitives Gitter aus $ \mathrm {F^{-}-Ionen vor}$. Des weiteren gibt es etwa tetragonale, hexagonale, rhomboedrische sowie viele weitere Strukturen.\\ Eine primitive Elementarzelle enthält von jeder Atomart nur ein äquivalentes Atom. Die acht Atome in den Eckpunkten der Elementarzellen gehören nur zu einem achtel zu der Elementarzelle, da an jeder Ecke acht Elementarzellen aufeinander treffen.\\
@@ -206,11 +214,39 @@ Dies lässt sich nun nach $N_A$ umformen und ergibt folgende Formel zur Berechnu
 \begin{equation}
 N_A= \frac{N_Z \cdot M \cdot V_{Zyl}}{a^3 \cdot m_{Zyl}}
 \end{equation}
- 
 
+\subsection{Bestimmung von $a$ des Kalciumflouridkristalls}
+ 
+Um die Loschmidt-Zahl zu bestimmen wird der Wert $a$, die Kantenlänge einer Elementarzelle, benötigt. Dieser ist für die meisten Kristalle schon gegeben, lediglich für den Kalziumchlorid-Kristall muss sie noch ermittelt werden. Abbildung 3 zeigt die Kristallstruktur von Kalziumflourid. Es ist ein größeres kubisch-flächenzentriertes Gitter von $ \mathrm {Ca^{2+}}$-Ionen sowie ein darin liegendes, kleineres kubisch-primitives Gitter von $ \mathrm{F^-}$-Ionen erkennbar. Als Information ist uns der Abstand $r$ von den Ionen gegeben. Bei genauerer Betrachtung des Kristalls ist zu erkennen, dass ein Fluorid-Ion tetraedrisch von je vier Kalzium-Ionen umgeben ist. Der Abstand vom Zentrum zu den Ecken des Tetraeders entspricht dabei dem Abstand $r$.
+
+\begin{figure} [h]
+\begin{center}
+\includegraphics[scale=1]{a.png} \end{center}
+\caption{Berechnung von $a$}
+\end{figure} 
+
+So lässt sich nun die Länge $d$ mithilfe des Kosinussatzes berechnen, da der Winkel in einem Tetraeder allgemein mit $109,5^\circ$ bekannt ist:
+
+\begin{equation}
+ d = \sqrt{2r^2-2r^2 \cdot \cos \beta } = 3, 863 \quad \AA
+\end{equation}     
+
+Die Länge $d$ ist die Hälfte der Flächen-diagonalen des Kalzium-Ionengitters. Da der Winkel zwischen den Flächen-diagonalen allgemein mit $ 90^\circ $ bekannt ist, lässt sich wieder mithilfe des Kosinussatzes die Länge $a$ berechnen:
+
+\begin{equation}
+ d = \sqrt{2d^2-2d^2 \cdot \cos \gamma } = 5,463 \quad \AA
+\end{equation}   
 
 \section{Experimentelles}
-\section{Messwerte}
+
+\subsection{Versuchsaufbau}
+\subsection{Hilfsmittel}
+Als Hilfsmittel werden eine Analysewaage sowie eine Mikrometerschraube verwendet.
+
+\subsection{Durchführung}
+
+Für die Bestimmung der Loschmidt-Zahl werden die drei Kristalle jeweils zehnmal gewogen und ausgemessen. Mithilfe der Analysewaage wird die Masse $m_{Zyl}$ bestimmt. Mit der Mikrometerschraube wird die Länge $l$ und Durchmesser $d$ gemessen. Im Umgang mit den Kristallen müssen Baumwollhandschuhe getragen werden. 
+
 \section{Auswertung}
 Zur Bestimmung der Loschmidt -Zahl wird nach der in Kapitel 1.3 beschriebenen Vorhergehensweise vorgegangen. Zuerst muss der Mittelwert der verschiedenen Messgrößen errechnet werden:
 \begin{equation}
@@ -326,6 +362,13 @@ Die "wahre" Loschmidt-Zahl müsste zwischen den Werten liegen
 
 
 \section{Literaturverzeichnis}
+1\quad Götz, Eckhold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.
+
+\vspace{0,5 cm}
+
+2 \quad \emph{Skriptum für das Praktikum zur Einführung in die Physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.\\
+
+3\quad Charles E. Mortimer, Ulrich Müller: \emph{Das Basiswissen der Chemie}, 7. Auflage, Georg Thieme Verlag, Stuttgart \textbf{2003}.
 
 
 \end{document}
