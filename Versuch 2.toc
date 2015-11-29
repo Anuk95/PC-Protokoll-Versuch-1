@@ -15,6 +15,5 @@
 \contentsline {subsection}{\numberline {4.2}Lithiumfluoridkristall}{10}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Calciumfluoridkristall}{10}{subsection.4.3}
 \contentsline {section}{\numberline {5}Fehlerdiskussion}{11}{section.5}
-\contentsline {subsection}{\numberline {5.1}Diskussion systematischer Fehler}{11}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Vergleich mit Literaturwerten}{12}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.1}Diskussion systematischer Fehler und Vergleich mit den Literaturwerten}{11}{subsection.5.1}
 \contentsline {section}{\numberline {6}Literaturverzeichnis}{12}{section.6}
