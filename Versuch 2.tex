@@ -261,6 +261,7 @@ Als Hilfsmittel werden eine Analysewaage sowie eine Mikrometerschraube verwendet
 
 Für die Bestimmung der Loschmidt-Zahl werden die drei Kristalle jeweils zehnmal gewogen und ausgemessen. Mithilfe der Analysewaage wird die Masse $m_{Zyl}$ bestimmt. Mit der Mikrometerschraube wird die Länge $l$ und Durchmesser $d$ gemessen. Im Umgang mit den Kristallen müssen Baumwollhandschuhe getragen werden. 
 
+\newpage
 \section{Auswertung}
 Zur Bestimmung der Loschmidt -Zahl wird nach der in Kapitel 1.3 beschriebenen Vorhergehensweise vorgegangen. Zuerst muss der Mittelwert der verschiedenen Messgrößen errechnet werden:
 \begin{equation}
@@ -313,32 +314,33 @@ mit $N_Z =4$ und $a=5,4627\cdot 10^{-7} \mathrm{mm}$\\
 
 
 \section{Fehlerrechnung}
-Fehler bei dem Versuch entstehen jeweils für jede der drei Messungen an dem Kristall. Einerseits muss der Fehler, der durch die Messungenauigkeit der Geräte entsteht, berücksichtigt werden und andererseits die jeweilige Standartabweichung des Mittelwertes, da auch der Mittelwert nie vollständig korrekt ist. Diese beiden Fehler müssen für jede der drei Messgrößen berücksichtigt werden.
+Fehler bei dem Versuch entstehen für jede der drei Messungen an dem Kristall. Der Fehler, bzw. die Messungenauigkeit der verwendeten Geräte muss berücksichtigt werden. Ein andere Fehlergröße ist die Standartabweichung des Mittelwertes, die den statistischen Fehler des Mittelwertes angibt. 
+Diese beiden Fehler müssen für jede der drei Messgrößen berücksichtigt werden.
 
-Die Gerätefehler bzw. -ungenauigkeiten sind für alle Messungen gleich:
+Die Gerätefehler bzw. -ungenauigkeiten sind für alle Messungen gleich und ergben sich aus der ersten vom Gerät nicht genau definierten Dezimalstelle:
 \\
 \\
 $\Delta m = 0,00005$ g \\
-$\Delta d = 0,005$mm\\
-$\Delta l = 0,005 $mm\\
+$\Delta d = 0,005$ mm\\
+$\Delta l = 0,005 $ mm\\
 \\
 
 Die Standartabweichung des Mittelwertes muss für jede Messung einzeln ausgerechnet werden. Sie ergibt sich durch folgende Formel:
 
 \begin{equation}
-s_N=\sqrt{\frac{1}{N-1}\sum_{i=1}^N (x_i -\bar{x})^2}
+\bar{s_N}=\sqrt{\frac{1}{N-1}\sum_{i=1}^N (x_i -\bar{x})^2}
 \end{equation}
 
-Diese entstandenen Fehler setzen sich im Laufe der Rechnung fort und müssen bei der Berechung von $N_A$ mit berücksichtigt werden. Dafür wird die Gauß'sche Fehlerrechnungsformel angewandt:
+Diese entstandenen Fehler setzen sich im Laufe der Rechnung fort und müssen bei der Berechung von $N_A$ mit berücksichtigt werden. Dafür wird das Gauß'sche Fehlerfortpflanzungsgesetz angewandt:
 
 \begin{equation}
 \Delta f =\sqrt{\sum_{i}(\frac{\delta f}{\delta x_i}\cdot\Delta x^2_i}
 \end{equation}
 
-Angewandt auf die Formel für $N_A$ ergibt sich für den Fehler somit folgende Formel:
+Somit ergibt sich folgender Fehler für $N_A$:
 
 \begin{equation}
-\Delta f = \sqrt{\left(\frac{N_z \cdot M \cdot \pi \cdot 2d \cdot l}{m_Zyl \cdot a^3 \cdot 4}\right)^2 \cdot \Delta d^2 + \left(\frac{N_z \cdot M \cdot \pi \cdot d^2 \cdot 1}{m_Zyl \cdot a^3 \cdot 4}\right)^2 \cdot \Delta l^2 - \left(\frac{N_z \cdot M \cdot \pi \cdot d^2 \cdot l}{m_Zyl^2 \cdot a^3 \cdot 4}\right)^2 \cdot \Delta m^2}
+\Delta f = \sqrt{\left(\frac{N_z \cdot M \cdot \pi \cdot 2d \cdot l}{m_{Zyl} \cdot a^3 \cdot 4}\right)^2 \cdot \Delta d^2 + \left(\frac{N_z \cdot M \cdot \pi \cdot d^2 \cdot 1}{m_{Zyl} \cdot a^3 \cdot 4}\right)^2 \cdot \Delta l^2 - \left(\frac{N_z \cdot M \cdot \pi \cdot d^2 \cdot l}{m_{Zyl}^2 \cdot a^3 \cdot 4}\right)^2 \cdot \Delta m^2}
 \end{equation}
 
 \subsection{Aluminiumkristall}
@@ -400,7 +402,7 @@ $\Delta f =6,173 \cdot 10^{20} \mathrm{mol^-1}$
 
 
 \section{Fehlerdiskussion}
-\subsection{Diskussion systematischer Fehler}
+\subsection{Vergleich mit dem Literaturwert}
 
 Der Literaturwert für $L_A$ liegt bei:\\
 
@@ -408,9 +410,10 @@ Der Literaturwert für $L_A$ liegt bei:\\
 $  L_A = 6,0221417930 \ \mathrm{mol^{-1}} $ \footnote{Quelle: http://www.chemie.de/lexikon/Avogadro-Konstante.html ; 27.11.15}
 
 \vspace{3mm}
-Die errechneten Werte für $L_A$ liegen bei:\\
-\vspace{3mm}
-   Aluminium-Kristall\\
+Folgende Werte für $L_A$ ergaben sich aus den Messungen:\\
+\vspace{2.5mm}
+
+ Aluminium-Kristall\\
  \quad $ L_A= 7,190 \ \cdot 10^{23}  \pm 2,092\cdot10^{21} \ \mathrm{mol^-1} $\\
    \\
  Lithiumfluoridkristall\\
@@ -420,25 +423,23 @@ Die errechneten Werte für $L_A$ liegen bei:\\
  \quad $L_A = 5,985 \ \cdot 10^{23} \pm 6,173 \cdot 10^{20} \mathrm{mol^-1}$\\
  \\
 
+\subsection{Disskussion systematischer Fehler}
 
-Obwohl die Werte in derselben Zehnerpotenz liegen, ist doch sichtbar, dass der berechnete Fehler zu klein ist, um dem Literaturwert für die Loschmidt-Konstante nahe zu kommen.
-
-Das liegt daran, dass neben der Ungenauigkeit der Messgeräte andere Messfehler auftreten, die in der Rechnung nicht berücksichtigt werden. Beispielsweise ist die genaue Messung des Durchmessers mit der Mikrometerschraube sehr schwer, da der Durchmesser nach Augenmaß gewählt wird. \\
-Bei der Messung der Länge ließ sich beispielsweise das Aluminium leicht verformen und wies an unterschiedlichen Ansatzpunkten der Mikrometerschraube stark unterschiedliche Längen auf. Um tatsächlich den Mittelwert der Länge zu erhalten, hätte die Vorgehensweise hier deutlich genauer sein müssen. Manche der Kristalle hatten ausgeschlagene Kanten und waren sehr beschädigt. So kommt es, dass das gemessene Volumen in der Regel größer sein wird als das tatsächliche Volumen und im Verhältnis zu der Masse eine geringere makroskopische Dichte ergibt.(Auswirkung auf Zahl) \\
-In der Fehlerrechnung wurden diese Messfehler bzw. -ungenauigkeiten allerdings nicht berücksichtigt, sondern von idealen Zylindern ausgegangen und mit dem Gerätefehler gerechnet. Faktisch ist der durch die beschriebenen Ungenauigkeiten entstandene Fehler viel größer als der Gerätefehler, allerdings auch schwer abzuschätzen. \\
-So kommt es, dass die errechneten Werte Fehler $\Delta f$ viel zu klein sind, als dass die Werte für $L_A$ mithilfe der Fehlergrenzen dem Literaturwert entsprechen könnten.
-\\
-
-Um der Loschmidt-Zahl näher zu kommen, müsste außerdem ein Mittelwert der drei errechneten Werte gebildet werden. 
+Auffällig ist zunächst, dass die mithilfe des Calciumchlorid-Kristalls errechnete Loschmidt-Zahl dem Literaturwert am nächsten kommt und der Wert des Aluminiumkristalls am weitesten entfernt ist.
 
 
+Die stärkste Abweichung des Wertes beim Aluminiumkristall ließe sich zum Beispiel dadurch erklären, dass Alumium als Metall- und nicht Ionengitter vorliegt und somit duch äußere Einflüssen wie Hitze oder Druck deutlich leichter angreifbar ist. Die Kationengitterebenen lassen sich leichter verschieben, wodurch eine erste große Fehlerquelle beim Ausmessen entsteht. Lithiumfluorid und Calciumchlorid sind hier fester in ihrem Kristallgitter verankert und auch temperatur- und druckbeständiger. Ihr Wert kommt der Literaturangabe auch deutlich näher.
+Es ist etwas problematisch, Aussagen anhand solcher Beispiele zu treffen, da sich Fehler nicht nur aufsummieren, sondern auch gegenseitig auslöschen können. Da dennoch keiner der Werte auch mit seinem errechneten Fehler der Loschmidt-Konstante nahe kommen, müssen noch andere Fehlerquellen betrachtet werden, die alle drei Kristalle gleichermaßen betreffen.
 
+Eine besondere Messungenauigkeit ist hierbei beispielsweise die Messung des Durchmessers mit der Mikrometerschraube. Es stehen hierbei keine weiteren Hilfsmittel zur Verfügung, sodass die Messung nach Augenmaß ausgeführt wird. Dieser Messfehler und andere systematische Messfehler werden allerdings in der Fehlerrechnung nicht berücksichtigt. Teilweise waren auch verschiedene Längen sehr unterschiedlich groß; für ein deutlicheres Ergebnis hätte diese Größe öfters und an jeder Stelle gleich oft gemessen werden müssen, um ein genaueres Ergebnis zu erlangen. 
 
+Manche der Kristalle hatten auch ausgeschlagene Kanten und waren beschädigt. So kommt es, dass das gemessene Volumen in der Regel größer sein wird als das tatsächliche Volumen und im Verhältnis zu der Masse eine geringere makroskopische Dichte ergibt. Zu beachten ist auch, dass Kristalle auch durchaus Unregelmäßigkeiten aufweisen und somit nicht überall dem idealen Gitter mit der angegeben Gitterkonstante entsprechen.
 
+All diese Faktoren wurden in der Rechnung nicht berücksichtigt. Quantitativ lässt sich hier schwer eine Aussage machen. Dieser nicht berücksichtigte systematische Fehler wird mindestens der Differenz der Fehlergrenze zu dem Literaturwert entsprechen, dh. in der Größenordnung $1 \cdot 10^{23}$ liegen. Da sich Fehler aber auch addieren oder gegenseitig aufheben können, ist es sehr schwer, hier eine genaue Aussage zu treffen.
 
+Bei einer systematischen Vorhergehensweise müsste außerdem der Mittelwert aus den drei verschiedenen Werten gebildet werden, um der Loschmidt-Zahl näher zu kommen.
 
-
-\subsection{Vergleich mit Literaturwerten}
+\newpage
 
 \section{Literaturverzeichnis}
 1\quad Götz, Eckhold: \emph{Sriptum zur Einführung in die physikalische Chemie}, Institut für physikalische Chemie, Uni Göttingen, \textbf{2015}.
