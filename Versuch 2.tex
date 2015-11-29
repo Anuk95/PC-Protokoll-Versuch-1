@@ -45,7 +45,7 @@
 \usepackage{sidecap}
 
 % Befehl für "Entspricht"-Zeichen
-%\newcommand{\corresponds}{\ensuremath{\mathrel{\widehat{=}}}}
+\newcommand{\corresponds}{\ensuremath{\mathrel{\widehat{=}}}}
 % Befehl für Errorfunction
 \newcommand{\erf}[1]{\text{ erf}\ensuremath{\left( #1 \right)}}
 
@@ -330,9 +330,7 @@ $\Delta l = 0,005 $ mm\\
 Die Standartabweichung des Mittelwertes muss für jede Messung einzeln ausgerechnet werden. Sie ergibt sich durch folgende Formel:
 
 \begin{equation}
-
 \bar{s_N}=\sqrt{\frac{1}{N-1}\sum_{i=1}^N (x_i -\bar{x})^2}
-
 \end{equation}
 
 Diese entstandenen Fehler setzen sich im Laufe der Rechnung fort und müssen bei der Berechung von $N_A$ mit berücksichtigt werden. Dafür wird das Gauß'sche Fehlerfortpflanzungsgesetz angewandt:
