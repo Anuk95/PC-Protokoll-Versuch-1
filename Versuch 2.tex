@@ -45,7 +45,7 @@
 \usepackage{sidecap}
 
 % Befehl für "Entspricht"-Zeichen
-\newcommand{\corresponds}{\ensuremath{\mathrel{\widehat{=}}}}
+%\newcommand{\corresponds}{\ensuremath{\mathrel{\widehat{=}}}}
 % Befehl für Errorfunction
 \newcommand{\erf}[1]{\text{ erf}\ensuremath{\left( #1 \right)}}
 
@@ -113,13 +113,13 @@ Assistentin: & Annemarie Kehl\\
   \textbf{Werte:}\\
   \\
    Aluminium-Kristall\\
- \quad $ L_A= 7,190 \ \cdot 10^{23}  \pm 2,092\cdot10^{21} \ \mathrm{mol^-1} $\\
+ \quad $ L_A= (7,19 \ \cdot 10^{23}  \pm 2\cdot10^{21}) \quad \ \mathrm{mol^-1} $\\
    \\
  Lithiumfluoridkristall\\
-\quad $ L_A = 6,360 \ \cdot 10^{23} \pm 7,525 \cdot 10^{21} \mathrm{mol^{-1}} $\\
+\quad $ L_A = (6,36 \ \cdot 10^{23} \pm 8 \cdot 10^{21}) \quad \mathrm{mol^{-1}} $\\
  \\
  Calciumchloridkristall\\
- \quad $L_A = 5,985 \ \cdot 10^{23} \pm 6,173 \cdot 10^{20} \mathrm{mol^-1}$\\
+ \quad $L_A = (5,985 \ \cdot 10^{23} \pm 6 \cdot 10^{20}) \quad \mathrm{mol^-1}$\\
  \\
   \end{minipage}
 }
@@ -232,6 +232,8 @@ Um die Loschmidt-Zahl zu bestimmen wird der Wert $a$, die Kantenlänge einer Ele
 \caption{Berechnung von $a$}
 \end{figure} 
 
+\newpage
+
 So lässt sich nun die Länge $d$ mithilfe des Kosinussatzes berechnen, da der Winkel in einem Tetraeder allgemein mit $109,5^\circ$ bekannt ist:
 
 \begin{equation}
@@ -274,7 +276,7 @@ Für die gemessenen Werte ergeben sich somit folgende Mittelwerte:\\
 \textbf{Aluminiumkristall:}\\
 Masse $\bar{m}=9,9446$ \ g \\
 Durchmesser $\bar{d}=15,00$ \ mm \\
-Länge $\bar{l}=24,883$ \ mm\\
+Länge $\bar{l}=24,88$ \ mm\\
 
 \vspace{3mm}
 \textbf{Lithiumfluorid-Kristall:}\\
@@ -291,25 +293,25 @@ Länge $\bar{l}=10,00$ \ mm\\
 Mit $r=\frac{d}{2}$ lassen sich mithilfe von Formel 4 folgende Volumina berechnen:
 
 \vspace{3mm}
-$V_{Aluminiumkristall} = 6299 \mathrm{mm^3}$\\
-$V_{Lithiumfluorid-Kristall} =4398 \mathrm{mm^3}$\\
-$V_{Calciumfluoridkristall} = 3138 \mathrm{mm^3}$\\
+$V_{Aluminiumkristall} = 6299 \quad \mathrm{mm^3}$\\
+$V_{Lithiumfluorid-Kristall} =4398 \quad \mathrm{mm^3}$\\
+$V_{Calciumfluoridkristall} = 3138 \quad \mathrm{mm^3}$\\
 
 \vspace{3mm}
 
 Daraus ergeben sich für die Loschmidt-Zahl nach Formel 7 folgende Werte:
 \vspace{3mm}
 
-Aluminium-Kristall: \qquad $N_A = 7,190 \ \cdot 10^{23} \mathrm{mol^-1}$\\
-mit $N_Z =4$ und $a=4,049\cdot 10^{-7} \mathrm{mm}$\\
+Aluminium-Kristall: \qquad $N_A = 7,190 \ \cdot 10^{23} \quad \mathrm{mol^-1}$\\
+mit $N_Z =4$ und $a=4,049\cdot 10^{-7} $ mm\\
 \vspace{3mm}
 
-Lithiumfluoridkristall: \qquad $N_A = 6,360 \ \cdot 10^{23} \mathrm{mol^-1}$\\
-mit $N_Z =4$ und $a=4,018\cdot 10^{-7} \mathrm{mm}$\\
+Lithiumfluoridkristall: \qquad $N_A = 6,360 \ \cdot 10^{23} \quad\mathrm{mol^-1}$\\
+mit $N_Z =4$ und $a=4,018\cdot 10^{-7} $ mm\\
 \vspace{3mm}
 
-Calciumchloridkristall: \qquad $N_A = 5,985 \ \cdot 10^{23} \mathrm{mol^-1}$\\
-mit $N_Z =4$ und $a=5,4627\cdot 10^{-7} \mathrm{mm}$\\
+Calciumchloridkristall: \qquad $N_A = 5,985 \ \cdot 10^{23} \quad\mathrm{mol^-1}$\\
+mit $N_Z =4$ und $a=5,4627\cdot 10^{-7} $ mm\\
 \vspace{3mm}
 
 
@@ -328,13 +330,17 @@ $\Delta l = 0,005 $ mm\\
 Die Standartabweichung des Mittelwertes muss für jede Messung einzeln ausgerechnet werden. Sie ergibt sich durch folgende Formel:
 
 \begin{equation}
+<<<<<<< HEAD
 \bar{s_N}=\sqrt{\frac{1}{N-1}\sum_{i=1}^N (x_i -\bar{x})^2}
+=======
+s_N=\sqrt{\frac{1}{N \cdot (N-1)}\sum_{i=1}^N (x_i -\bar{x})^2}
+>>>>>>> origin/master
 \end{equation}
 
 Diese entstandenen Fehler setzen sich im Laufe der Rechnung fort und müssen bei der Berechung von $N_A$ mit berücksichtigt werden. Dafür wird das Gauß'sche Fehlerfortpflanzungsgesetz angewandt:
 
 \begin{equation}
-\Delta f =\sqrt{\sum_{i}(\frac{\delta f}{\delta x_i}\cdot\Delta x^2_i}
+\Delta f =\sqrt{\sum_{i} \left( \frac{\delta f}{\delta x_i}\right)^2 \cdot\Delta x^2_i }
 \end{equation}
 
 Somit ergibt sich folgender Fehler für $N_A$:
@@ -354,7 +360,7 @@ $\Delta m = 5,2068\cdot10^{-5} \ \mathrm{g} \quad \Delta d= 00,01659 \ \mathrm{m
 Bei Vergleich der Gerätefehler wird deutlich, dass sich beide Fehler in ungefähr derselben Größenordnung befinden und somit keiner der beiden Fehler überwiegt und der andere vernachlässigt werden kann. Somit müssen die beiden Fehler für die verschiedenen Größen addiert werden und es ergeben sich folgende Werte:
 
 \vspace{3mm} 
-$\Delta m =5,5207\cdot 10^{-4}\ \mathrm{g} \qquad\Delta d =0,02159\ \mathrm{mm}\qquad \Delta l = 0,01059\ \mathrm{mm}$
+$\Delta m =5,5207\cdot 10^{-4}\ \mathrm{g} \qquad\Delta d =0,02159\ \mathrm{mm}\quad \Delta l = 0,01059\ \mathrm{mm}$
 \vspace{3mm}
  
 Nach der Gaußschen Fehlerfortpflanzung ergibt sich somit für die mithilfe des Aluminiumzylinders errechnete Loschmidt-Zahl $N_A$ folgender Fehler:\\
@@ -382,7 +388,7 @@ Dadurch ergibt sich nach der Gauß'schen Fehlerfortpflanzung für $N_A$ folgende
 
 $\Delta f= 7,525 \cdot 10^{21} \mathrm{mol^{-1}}$
 
-
+\newpage
 
 \subsection{Calciumfluoridkristall}
 
@@ -402,7 +408,9 @@ $\Delta f =6,173 \cdot 10^{20} \mathrm{mol^-1}$
 
 
 \section{Fehlerdiskussion}
+
 \subsection{Vergleich mit dem Literaturwert}
+
 
 Der Literaturwert für $L_A$ liegt bei:\\
 
@@ -422,22 +430,31 @@ Folgende Werte für $L_A$ ergaben sich aus den Messungen:\\
  Calciumchloridkristall\\
  \quad $L_A = 5,985 \ \cdot 10^{23} \pm 6,173 \cdot 10^{20} \mathrm{mol^-1}$\\
  \\
+\newpage
+
 
 \subsection{Disskussion systematischer Fehler}
 
 Auffällig ist zunächst, dass die mithilfe des Calciumchlorid-Kristalls errechnete Loschmidt-Zahl dem Literaturwert am nächsten kommt und der Wert des Aluminiumkristalls am weitesten entfernt ist.
 
+Das liegt daran, dass neben der Ungenauigkeit der Messgeräte andere Messfehler auftreten, die in der Rechnung nicht berücksichtigt werden. Beispielsweise ist die genaue Messung des Durchmessers mit der Mikrometerschraube sehr schwer, da der Durchmesser nach Augenmaß gewählt wird. \\
 
-Die stärkste Abweichung des Wertes beim Aluminiumkristall ließe sich zum Beispiel dadurch erklären, dass Alumium als Metall- und nicht Ionengitter vorliegt und somit duch äußere Einflüssen wie Hitze oder Druck deutlich leichter angreifbar ist. Die Kationengitterebenen lassen sich leichter verschieben, wodurch eine erste große Fehlerquelle beim Ausmessen entsteht. Lithiumfluorid und Calciumchlorid sind hier fester in ihrem Kristallgitter verankert und auch temperatur- und druckbeständiger. Ihr Wert kommt der Literaturangabe auch deutlich näher.
+Bei der Messung der Länge ließ sich beispielsweise das Aluminium leicht verformen und wies an unterschiedlichen Ansatzpunkten der Mikrometerschraube stark unterschiedliche Längen auf. Um tatsächlich den Mittelwert der Länge zu erhalten, hätte die Vorgehensweise hier deutlich genauer sein müssen. Manche der Kristalle hatten ausgeschlagene Kanten und waren sehr beschädigt. So kommt es, dass das gemessene Volumen in der Regel größer sein wird als das tatsächliche Volumen und im Verhältnis zu der Masse eine geringere makroskopische Dichte ergibt. Dies würde zu einer kleineren Loschmidt-Zahl führen. Etwa das Ergebnis für den Kalziumflouridkristall ließe sich so erklären. Des weiteren sind Kristalle selten perfekt aufgebaut, meistens gibt es Baufehler. Diese bedeuten, dass die tatsächliche Dichte größer oder kleiner als die theoretisch angenommenen Dichte des idealen Kristalls ist. So kann es bei einer tatsächlich höheren Dichte zum Ermitteln einer zu großen Loschmidt-Zahl kommen, was die Ergebnisse für den Aluminium und Lithiumkristall erklären könnten.\\
+
+In der Fehlerrechnung wurden diese Messfehler bzw. -ungenauigkeiten allerdings nicht berücksichtigt, sondern von idealen Zylindern ausgegangen und mit dem Gerätefehler gerechnet. Faktisch ist der durch die beschriebenen Ungenauigkeiten entstandene Fehler viel größer als der Gerätefehler, allerdings auch schwer abzuschätzen. \\
+So kommt es, dass die errechneten Werte Fehler $\Delta f$ viel zu klein sind, als dass die Werte für $L_A$ mithilfe der Fehlergrenzen dem Literaturwert entsprechen könnten.
+
+Die stärkste Abweichung des Wertes beim Aluminiumkristall ließe sich zum Beispiel dadurch erklären, dass Alumium als Metall- und nicht Ionengitter vorliegt und somit duch äußere Einflüssen wie Hitze oder Druck deutlich leichter angreifbar ist. Die Kationengitterebenen lassen sich leichter verschieben, wodurch eine erste große Fehlerquelle beim Ausmessen entsteht. Lithiumfluorid und Calciumchlorid sind hier fester in ihrem Kristallgitter verankert und auch temperatur- und druckbeständiger. Ihr Wert kommt der Literaturangabe auch deutlich näher. \\
 Es ist etwas problematisch, Aussagen anhand solcher Beispiele zu treffen, da sich Fehler nicht nur aufsummieren, sondern auch gegenseitig auslöschen können. Da dennoch keiner der Werte auch mit seinem errechneten Fehler der Loschmidt-Konstante nahe kommen, müssen noch andere Fehlerquellen betrachtet werden, die alle drei Kristalle gleichermaßen betreffen.
 
-Eine besondere Messungenauigkeit ist hierbei beispielsweise die Messung des Durchmessers mit der Mikrometerschraube. Es stehen hierbei keine weiteren Hilfsmittel zur Verfügung, sodass die Messung nach Augenmaß ausgeführt wird. Dieser Messfehler und andere systematische Messfehler werden allerdings in der Fehlerrechnung nicht berücksichtigt. Teilweise waren auch verschiedene Längen sehr unterschiedlich groß; für ein deutlicheres Ergebnis hätte diese Größe öfters und an jeder Stelle gleich oft gemessen werden müssen, um ein genaueres Ergebnis zu erlangen. 
+Eine besondere Messungenauigkeit ist hierbei beispielsweise die Messung des Durchmessers mit der Mikrometerschraube. Es stehen hierbei keine weiteren Hilfsmittel zur Verfügung, sodass die Messung nach Augenmaß ausgeführt wird. Dieser Messfehler und andere systematische Messfehler werden allerdings in der Fehlerrechnung nicht berücksichtigt. Teilweise waren auch verschiedene Längen sehr unterschiedlich groß; für ein deutlicheres Ergebnis hätte diese Größe öfters und an jeder Stelle gleich oft gemessen werden müssen, um ein genaueres Ergebnis zu erlangen. \\
 
-Manche der Kristalle hatten auch ausgeschlagene Kanten und waren beschädigt. So kommt es, dass das gemessene Volumen in der Regel größer sein wird als das tatsächliche Volumen und im Verhältnis zu der Masse eine geringere makroskopische Dichte ergibt. Zu beachten ist auch, dass Kristalle auch durchaus Unregelmäßigkeiten aufweisen und somit nicht überall dem idealen Gitter mit der angegeben Gitterkonstante entsprechen.
+Manche der Kristalle hatten auch ausgeschlagene Kanten und waren beschädigt. So kommt es, dass das gemessene Volumen in der Regel größer sein wird als das tatsächliche Volumen und im Verhältnis zu der Masse eine geringere makroskopische Dichte ergibt. Zu beachten ist auch, dass Kristalle auch durchaus Unregelmäßigkeiten aufweisen und somit nicht überall dem idealen Gitter mit der angegeben Gitterkonstante entsprechen.\\
 
-All diese Faktoren wurden in der Rechnung nicht berücksichtigt. Quantitativ lässt sich hier schwer eine Aussage machen. Dieser nicht berücksichtigte systematische Fehler wird mindestens der Differenz der Fehlergrenze zu dem Literaturwert entsprechen, dh. in der Größenordnung $1 \cdot 10^{23}$ liegen. Da sich Fehler aber auch addieren oder gegenseitig aufheben können, ist es sehr schwer, hier eine genaue Aussage zu treffen.
 
-Bei einer systematischen Vorhergehensweise müsste außerdem der Mittelwert aus den drei verschiedenen Werten gebildet werden, um der Loschmidt-Zahl näher zu kommen.
+All diese Faktoren wurden in der Rechnung nicht berücksichtigt. Quantitativ lässt sich hier schwer eine Aussage machen. Dieser nicht berücksichtigte systematische Fehler wird mindestens der Differenz der Fehlergrenze zu dem Literaturwert entsprechen, dh. in der Größenordnung $1 \cdot 10^{23}$ liegen. Da sich Fehler aber auch addieren oder gegenseitig aufheben können, ist es sehr schwer, hier eine genaue Aussage zu treffen.\\
+
+Bei einer systematischen Vorhergehensweise müsste außerdem der Mittelwert aus den drei verschiedenen Werten gebildet werden, um der Loschmidt-Zahl näher zu kommen.\\
 
 \newpage
 
